@@ -1,0 +1,496 @@
+* {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+header .header-logo {
+  font-family: "Catamaran";
+  font-size: 24px;
+  color: black;
+  font-weight: 900;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header nav ul {
+  display: block;
+  padding: 0 0;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 15px;
+}
+
+header nav ul li a {
+  font-family: "Catamaran";
+  font-size: 16px;
+  color: black;
+  text-transform: uppercase;
+}
+
+header .header-cases {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  header .header-logo {
+    margin: 30px 0px;
+    text-align: left;
+    line-height: 38px;
+    padding: 0px 16px 0px 40px;
+    border-right: 3px solid #111;
+    float: left;
+  }
+  header nav ul {
+    margin: 20 0px 0px 20px;
+    float: left;
+  }
+
+  header nav ul li a {
+    line-height: 100px;
+  }
+
+  header .header-cases {
+    display: block;
+    font-family: "Catamaran";
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    line-height: 38px;
+    border: 1px solid #111;
+    float: right;
+    margin-right: 40px;
+    margin-top: 27px;
+    padding: 0px 20px;
+  }
+}
+
+/* INDEX*/
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url("media/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.index-banner h1 {
+  font-family: "Catamaran";
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  line-height: 70px;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h2 {
+  font-family: "Catamaran";
+  font-size: 28px;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 40px;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-links div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  background: white;
+  border-radius: 75px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+}
+
+.index-links div:hover {
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.index-links div:hover::before,
+.index-links div:hover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #fda8cf;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.index-links div:hover:after {
+  background: #f3ce5e;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
+}
+
+.index-links div h3 {
+  font-family: "Catamaran";
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  font-weight: 1000;
+  line-height: 100px;
+  color: #111;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper-index-links {
+    display: inline-block;
+    width: 250px;
+    margin: 0 6px;
+  }
+  .index-banner {
+    width: 100%;
+    height: 500px;
+    background-image: url("media/banner.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+  }
+  .index-banner h2 {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .index-links div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+    background: white;
+    border-radius: 1px;
+  }
+
+  .index-links div h3 {
+    font-family: "Catamaran";
+    font-size: 20px;
+    transition: 1s box-shadow;
+    color: black;
+    /*text-shadow: 2px 2px 8px #363636;*/
+    font-size: 30px;
+    font-weight: 100;
+  }
+
+  .index-links div:hover {
+    box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .index-links div:hover::before,
+  .index-links div:hover::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #fda8cf;
+    border-radius: 1px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+
+  .index-links div:hover:after {
+    background: #f3ce5e;
+    animation: 2s counterclockwise infinite;
+  }
+
+  @keyframes clockwise {
+    0% {
+      top: -5px;
+      left: 0;
+    }
+    12% {
+      top: -2px;
+      left: 2px;
+    }
+    25% {
+      top: 0;
+      left: 5px;
+    }
+    37% {
+      top: 2px;
+      left: 2px;
+    }
+    50% {
+      top: 5px;
+      left: 0;
+    }
+    62% {
+      top: 2px;
+      left: -2px;
+    }
+    75% {
+      top: 0;
+      left: -5px;
+    }
+    87% {
+      top: -2px;
+      left: -2px;
+    }
+    100% {
+      top: -5px;
+      left: 0;
+    }
+  }
+
+  @keyframes counterclockwise {
+    0% {
+      top: -5px;
+      right: 0;
+    }
+    12% {
+      top: -2px;
+      right: 2px;
+    }
+    25% {
+      top: 0;
+      right: 5px;
+    }
+    37% {
+      top: 2px;
+      right: 2px;
+    }
+    50% {
+      top: 5px;
+      right: 0;
+    }
+    62% {
+      top: 2px;
+      right: -2px;
+    }
+    75% {
+      top: 0;
+      right: -5px;
+    }
+    87% {
+      top: -2px;
+      right: -2px;
+    }
+    100% {
+      top: -5px;
+      right: 0;
+    }
+  }
+
+  .index-boxlink {
+    display: block;
+  }
+}
+
+/*INFO-DIV*/
+
+@media only screen and (min-width: 1000px) {
+  .wrapper-index-info {
+    position: absolute;
+    float: right;
+    display: inline-flex;
+    width: auto;
+    background: white;
+    align-items: center;
+    justify-content: left;
+    margin: 0px 20px 50px;
+  }
+
+  .index-info div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+    height: 250px;
+    background: white;
+    border-radius: 1px;
+  }
+}
+
+/*FOOTER*/
+
+footer {
+  display: inline-block;
+  position: relative;
+  min-height: 50px;
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: black;
+  overflow: hidden;
+}
+
+footer ul {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+}
+
+footer ul li a {
+  font-family: "Catamaran";
+  font-size: 24px;
+  color: white;
+  line-height: 40px;
+}
+
+.footer-links-cases {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+.footer-sm {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+.sm-text {
+  font-family: "Catamaran";
+  font-size: 24px;
+  color: white;
+  line-height: 40px;
+  margin: 0;
+}
+.footer-sm img {
+  display: inline-block;
+  width: 50px;
+  margin-top: 16px;
+}
+
+.avatar {
+  display: inline-block;
+  width: 20%;
+}
+
+.avatar-img {
+  width: 130px;
+  height: 133px;
+  border-radius: 40%;
+  margin: 0 25%;
+}
+
+.avatar-text {
+  font-family: "Catamaran";
+  font-size: 24px;
+  color: white;
+  line-height: 40px;
+  margin: 0 25%;
+}
