@@ -1,0 +1,11 @@
+body {
+  background: #f3ce5e;
+  background: linear-gradient(to right, #fda8cf, #f3ce5e);
+}
+
+.bg-image {
+  background-image: url(../media/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
