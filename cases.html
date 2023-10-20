@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Webpage</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cases.css" />
 
     <link
       rel="stylesheet"
@@ -21,87 +21,67 @@
   </head>
 
   <body>
-    <div class="wrapper">
-      <div class="grid">
-        <header>
-          <a class="header-logo" href="">MAGH</a>
-          <nav>
-            <ul>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="about-me.html">About Me</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <a class="header-cases" href="cases.html">cases</a>
-          </nav>
-        </header>
-        <main>
-          <section class="index-banner">
-            <div class="vertical-center">
-              <h1>Welcome To My Personal Webpage!</h1>
-              <h2>Design by Mario Gonzalez</h2>
+    <!-- HEADER -->
+    <header>
+      <a class="header-logo" href="index.html">MAGH</a>
+      <nav>
+        <ul>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about-me.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="header-cases" href="cases.html">cases</a>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <div class="container">
+        <section class="box-main">
+          <h2 class="heading">USE CASES</h2>
+          <p class="subheading">Scroll down to see the effect!</p>
+        </section>
+        <section class="box left">
+          <div class="background-banner-one">
+            <div class="box-content 1">
+              <h2>Element 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                id arcu ac nisi suscipit feugiat a a elit. Aliquam erat
+                volutpat.
+              </p>
             </div>
-          </section>
-
-          <div class="wrapper-index-links">
-            <section class="index-links">
-              <a href="index.html">
-                <div class="index-boxlink">
-                  <h3>Home</h3>
-                </div>
-              </a>
-              <a href="portfolio.html"
-                ><div class="index-boxlink">
-                  <h3>Portfolio</h3>
-                </div>
-              </a>
-              <a href="about-me.html"
-                ><div class="index-boxlink">
-                  <h3>About Me</h3>
-                </div>
-              </a>
-              <a href="info.html"
-                ><div class="index-boxlink">
-                  <h3>Info</h3>
-                </div>
-              </a>
-            </section>
           </div>
-
-          <div class="wrapper-index-info">
-            <section class="index-info">
-              <div class="index-info-box">
-                <p>
-                  The purpose of this website is to introduce myself and to
-                  showcase my Web Development skills. By clicking on each tap on
-                  the left you'll get to know more about me and my about my
-                  work.
-                </p>
-              </div>
-
-              <div class="index-info-box">
-                <p>Portfolio</p>
-              </div>
-
-              <div class="index-info-box">
-                <p>
-                  My name is Mario Gonzalez, I was born in August 1998 in a
-                  small town in Mexico. I migrated to the US when I was a
-                  teenager. I graduated from High School at Senn High School in
-                  Chicago Illinois. Not too long after I moved here to Texas
-                  where I currently work at Amazon as a warehouse associate. I
-                  recently started my journey to become a Software Developer,
-                  which has led me here to this program at Correlation 1.
-                </p>
-              </div>
-
-              <div class="index-info-box">
-                <p>C1 Student</p>
-              </div>
-            </section>
+        </section>
+        <section class="box right">
+          <div class="box-content 2">
+            <h2>Element 2</h2>
+            <p>
+              Proin sit amet erat dolor. Phasellus facilisis malesuada turpis ut
+              interdum. Pellentesque ut tortor eu arcu commodo lobortis.
+            </p>
           </div>
-        </main>
+        </section>
+        <section class="box left">
+          <div class="box-content 3">
+            <h2>Element 3</h2>
+            <p>
+              Mauris non libero non mauris dapibus hendrerit a ac enim. Sed sed
+              quam malesuada, dignissim metus at, faucibus lacus.
+            </p>
+          </div>
+        </section>
+        <section class="box right">
+          <div class="box-content 4">
+            <h2>Element 4</h2>
+            <p>
+              Cras non augue nec arcu ultricies viverra eget sit amet neque.
+              Fusce accumsan diam ut malesuada eleifend.
+            </p>
+          </div>
+        </section>
       </div>
-    </div>
+    </main>
+
     <!-- FOOTER -->
     <footer class="w-100 py-4 flex-shrink-0">
       <div class="container py-4">
@@ -114,7 +94,7 @@
             </p>
             <p class="small text-muted mb-0">
               &copy; Copyrights. All rights reserved.
-              <a class="text-primary" href="#">sample.com</a>
+              <a class="text-primary" href="#"></a>
             </p>
           </div>
           <div class="col-lg-2 col-md-6">
@@ -166,6 +146,7 @@
         </div>
       </div>
     </footer>
+    <script src="./javascript/cases.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
